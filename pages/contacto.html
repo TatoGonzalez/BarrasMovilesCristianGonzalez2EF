@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barras Moviles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./../styles/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+            <a class="navbar-brand logo__nav" href="#"><img class="rounded-circle" src="./../assets/images/barras moviles.jpg" alt="Logo"> Barras Moviles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./galeria.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./cocktails.html">Cocktails</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success me-4" type="submit">Buscar</button>
+                </form>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="container">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-4 me-5">
+                    <h3 class="titulos text-white fs-2 mt-4" style="text-align:center">SOLICITA TU PRESUPUESTO ONLINE</h3>
+                    <img class="w-100 mt-1 rounded-circle" src="./../assets/images/barras moviles.jpg" alt="Logo">
+                    <p class="shadow-lg p-1 bg-body rounded opacity-75 text-center mt-3"> Solicita tu presupuesto online completando el formulario que diseñamos, solo te tardara unos minutos y recibiras una respuesta a la brevedad. Ten en cuenta que nuestro equipo puede contactarte por via telefonica o por e-mail, recomendamos dejar detallado en observaciones su medio de contacto preferido y el horario en que estaria disponible. La empresa puede en casos particulares solicitar datos extra al momento de contactarse para confirmar el presupuesto. 
+                    </p>
+                </div>
+
+                <div class="col-md-7 col-sm-7 d-flex flex-column ms-5 mt-3">
+                    <form>
+                    
+                    <div class="d-flex flex-column mb-2">
+                        <label class="form-label" for="apellidos">Apellidos:</label>
+                        <input class="form-control" type="text" id="apellidos" placeholder="Apellidos.."/>
+                    </div>      
+        
+                    <div class="d-flex flex-column mb-2">
+                        <label class="form-label" for="nombres">Nombres:</label>
+                        <input class="form-control" type="text" id="nombres" placeholder="Nombres.."/>
+                    </div>
+        
+                    <div class="d-flex flex-column mb-2">
+                        <label class="form-label" for="telefono">Teléfono:</label>
+                        <input class="form-control" type="tel" id="telefono" placeholder="Telefono.."/>
+                    </div>
+        
+                    <div class="d-flex flex-column mb-2">
+                        <label class="form-label" for="email">E-mail:</label>
+                        <input class="form-control" type="email" id="email" placeholder="Email.."/>
+                    </div>
+        
+                    <div class="d-flex flex-column mb-2">
+                        <label class="form-label" for="lugar">Lugar del Evento:</label>
+                        <input class="form-control" type="text" id="lugar" placeholder="Direccion y Localidad.."/>
+                    </div>
+        
+                    <div class="d-flex flex-column mb-2">
+                        <label class="form-label" for="invitados">Cantidad de Invitados:</label>
+                        <input class="form-control" type="number" id="invitados" placeholder="Cantidad de Invitados.."/>
+                    </div>
+        
+                    <div class="d-flex flex-column mb-2">
+                        <label class="form-label" for="fecha">Selecciona fecha del evento: </label>
+                        <input class="form-control" type="date" id="fecha"/>
+                    </div>
+
+                    <div>
+                    <select class="form-select mt-3 mb-2" aria-label="Default select example">
+                        <option selected>Tipo de Evento</option>
+                        <option value="1">Casamiento</option>
+                        <option value="2">Cumpleaños</option>
+                        <option value="3">Empresarial</option>
+                        <option value="4">Otro (Indicar en observaciones)</option>
+                    </select>
+                    </div>
+
+                    <fieldset>
+                        <legend class="fieldset">Observaciones:</legend>
+                        <textarea name="" id="" cols="100" rows="5" placeholder="Escribe observaciones.."></textarea>
+                    </fieldset>
+            
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3 mb-4">
+                        <button class="btn btn-primary me-md-2" type="button" type="reset" value="Limpiar Datos">Limpiar Datos</button>
+                        <button class="btn btn-primary" type="submit" value="Solicitar Presupuesto" type="button">Solicitar Presupuesto</button>
+                    </div>
+                    
+                </form>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="col-md col-sm d-flex flex-column justify-content-center mt-4">
+            <h5 class="text-dark mt-4" style="text-align:center"> Barras Moviles - Exclusive Mobile Bar for Events - Empresa dedicada a la Cocteleria</h5>
+            <h6 class="text-dark" style="text-align:center">Todos los derechos reservados, Copyright &COPY</h6>
+            <h6 class="text-dark mb-2" style="text-align:center">Telefono: +54 9 1127452336 - Seguinos en nuestras redes sociales</h6>
+            
+        </div>
+        <div class="d-flex flex-row mb-3 d-flex justify-content-center">
+            <div class="p-2 redes__hover mt-1">
+                <a target="_blank" href="https://www.instagram.com/barrasmoviles/"> <img class="rounded-4" src="./../assets/images/instagram.jpg" alt="Instagram" width="45px"></a>
+            </div>
+            <div class="p-2 redes__hover mt-1">
+                <a target="_blank" href="https://api.whatsapp.com/message/HMDLHE6MQJ47H1?autoload=1&app_absent=0"><img class="rounded-4" src="./../assets/images/whatsapp.jpg" alt="Whatsapp" width="45px"></a>
+            </div>
+            <div class="p-2 redes__hover mb-3">
+                <a href="./index.html"><img class="rounded-circle" src="./../assets/images/barras moviles.jpg" alt="Inicio" width="52px"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
