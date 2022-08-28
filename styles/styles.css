@@ -3,6 +3,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+::selection {
+    background-color:cornflowerblue;
+    color:floralwhite;
+}
 
 /**HEADER**/
 .logo__nav img {
@@ -86,6 +90,11 @@ button a {
 
 .fotos:hover {
     transform: scale(1.5) translateY(-10px);
+        transition: 0.5s;
+}
+
+.videos:hover {
+    transform: scale(1.2) translateY(-10px);
         transition: 0.5s;
 }
 
